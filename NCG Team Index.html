@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto com W3.CSS</title>
+
+  <!-- Importando W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Estilo básico -->
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+    }
+
+    header {
+      background-color: #000000;
+      color: white;
+      padding: 5px 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    header img {
+      max-width: 150px;
+      margin-top: 5px;
+    }
+
+    .player-grid {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .player-card {
+      text-align: center;
+    }
+
+    .player-img {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #000;
+    }
+
+    .player-name {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="NCG.png" alt="Logo">
+  </header>
+
+  <div class="w3-container w3-padding-32">
+    <h3 class="w3-text-dark-grey">
+      A NCG é uma organização recém-formada que inicia sua trajetória no cenário 
+      competitivo de eSports com foco em League of Legends. Nosso objetivo é, desde 
+      o começo, construir uma base sólida para crescer e evoluir dentro do universo 
+      dos games. Com uma equipe dedicada e visão estratégica, planejamos expandir nossas 
+      operações para outros jogos no futuro. Além disso, buscamos formar uma comunidade de
+      players ativa e unida, onde todos possam compartilhar experiências, se desenvolver 
+      juntos e vibrar com nossas conquistas.
+    </h3>
+  </div>
+
+
+  
+  <div class="w3-container w3-padding-32">
+    <h2><b>NCG E-Sports</b></h2>
+    <h3 class="w3-text-dark-grey">
+      Acreditamos que o sucesso vem da união entre talento, dedicação e paixão pelo jogo. 
+      Nossa equipe principal é formada por jogadores de elite, cada um com habilidades únicas 
+      e um estilo de jogo afiado. Cada integrante se destaca pela excelência em sua função e 
+      pelo compromisso de alcançar a vitória em todos os desafios.
+    </h3>
+  </div>
+
+  <div class="w3-container w3-padding-32 w3-center w3-hover-opacity">
+    <a href="https://www.op.gg/multisearch/br?summoners=TnT+JCZNeto%23TnT%2CTnT+Miiiaaaauu%23tnt%2CTnT+Derrotinha%23tnt%2CTnT+ErosK%23tnt%2CTnT+Bloody%23tnt" target="_blank">
+      <img src="NCG.png" alt="Logo" style="width: 150px; height: auto;">
+    </a>
+    <h6>Clique aqui para ver o OP.GG do time</h6>
+  </div>
+  <div class="player-grid">
+    <!-- Jogador 1 -->
+    <div class="player-card">
+      <img src="eros.png" alt="Jogador 1" class="player-img">
+      <a href="https://www.op.gg/summoners/br/TnT%20ErosK-TnT" target="_blank"><h3><b>NCG Eros</b></h3></a>
+    </div>
+
+    <!-- Jogador 2 -->
+    <div class="player-card">
+      <img src="miau.png" alt="Jogador 2" class="player-img">
+      <a href="https://www.op.gg/summoners/br/TnT%20Miiiaaaauu-TnT" target="_blank"><h3><b>NCG Miau</b></h3></a>
+    </div>
+
+    <!-- Jogador 3 -->
+    <div class="player-card">
+      <img src="derrotinha.png" alt="Jogador 3" class="player-img">
+      <a href="https://www.op.gg/summoners/br/TnT%20Derrotinha-TnT" target="_blank"><h3><b>NCG Derrotinha</b></h3></a>
+    </div>
+
+    <!-- Jogador 4 -->
+    <div class="player-card">
+      <img src="blood.png" alt="Jogador 4" class="player-img">
+      <a href="https://www.op.gg/summoners/br/TnT%20Bloody-TnT" target="_blank"><h3><b>NCG Bloody</b></h3></a>
+    </div>
+    
+
+    <!-- Jogador 5 -->
+    <div class="player-card">
+      <img src="neto.png" alt="Jogador 5" class="player-img">
+      <a href="https://www.op.gg/summoners/br/TnT%20JCZNeto-TnT" target="_blank"><h3><b>NCG JCZNeto</b></h3></a>
+    </div>
+  </div>
+
+
+
+  <div class="w3-container w3-padding-32">
+    <h2><b>Comunidade</b></h2>
+    <h3 class="w3-text-dark-grey">
+      Estamos dando início à nossa trajetória competitiva com uma line dedicada a 
+      League of Legends. Com o tempo, planejamos expandir para uma segunda line e explorar 
+      outros jogos. Para tornar isso possível, contamos com uma comunidade engajada. Por isso, 
+      criamos grupos no WhatsApp e Discord para unir nossos membros. <br>
+
+      Além disso, produzimos conteúdos especiais para a galera do LoL, incluindo vídeos educativos 
+      e de entretenimento para nossos fãs. Fique de olho nos grupos, pois em breve anunciaremos campeonatos
+       e disponibilizaremos um grupo de scrims para ajudar os times a evoluírem!
+    </h3>
+  </div>
+  
+
+
+<!-- Slideshow após os players -->
+<div class="w3-container w3-center w3-padding-32">
+  <div class="w3-content w3-display-container">
+    <a href="#" id="link1" target="_blank">
+      <img class="slideshow-image" src="Imagem1whats.png" style="width:100%">
+    </a>
+    <a href="#" id="link2" target="_blank">
+      <img class="slideshow-image" src="imagem2streamers.png" style="width:100%; display:none;">
+    </a>
+    <a href="#" id="link3" target="_blank">
+      <img class="slideshow-image" src="Imagem3paredes.png" style="width:100%; display:none;">
+    </a>
+
+    <!-- Botões de navegação opcional -->
+    <button class="w3-button w3-black w3-display-left" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+</div>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slideshow-image");
+  const slideLinks = [
+    "https://chat.whatsapp.com/FBrXGgFzBdz6TVNf6LVzG8", // Link WhatsApp
+    "https://www.twitch.tv/seu_canal", // Link de streamers (exemplo)
+    "https://discord.gg/seu_servidor"  // Link para Discord (exemplo)
+  ];
+
+  function updateSlide() {
+    slides.forEach((slide, i) => slide.style.display = "none");
+    slides[slideIndex].style.display = "block";
+
+    // Atualiza o link corretamente
+    const linkElement = document.querySelectorAll(".w3-content a")[slideIndex];
+    if (linkElement) {
+      linkElement.href = slideLinks[slideIndex];
+    }
+  }
+
+  function changeSlide(n) {
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    updateSlide();
+  }
+
+  function autoShowSlides() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    updateSlide();
+  }
+
+  updateSlide(); // Inicia corretamente
+  setInterval(autoShowSlides, 5000);
+</script>
+
+
+
+
+  <footer class="w3-center w3-padding-16 w3-black">
+    <p class="w3-small">© 2025 NCG e-Sports. Todos os direitos reservados.</p>
+    <p class="w3-small">Desenvolvido por NCG e-Sports | 
+      <a href="https://www.NCGesports.com" class="w3-text-white">www.NCGesports.com</a>
+    </p>
+    <p class="w3-small">Siga-nos nas redes sociais: 
+      <a href="https://discord.gg/SERazZfr" class="w3-text-white">Discord</a> |
+      <a href="https://www.instagram.com/nemesis_combat_group/" class="w3-text-white">Instagram</a>
+    </p>
+    <p class="w3-small">
+      <a href="#" class="w3-text-white">Política de Privacidade</a> | 
+      <a href="#" class="w3-text-white">Termos de Uso</a>
+    </p>
+  </footer>
+
+</body>
+</html>
