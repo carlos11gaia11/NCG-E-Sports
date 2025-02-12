@@ -245,19 +245,48 @@ Formato MD3 ou MD5.<br>
 Competição séria, sem perder a diversão. Mostre seu nível, suba no ranking e prove que merece estar no topo!<br></b></h2>
   </div>
 
-  <!-- Formulário de Contato -->
-  <div  id="contato" class="w3-container w3-padding-32" data-aos="fade-up">
-    <h2><b>Contato</b></h2>
-    <form class="w3-container w3-card-4 w3-light-grey">
-      <label>Nome</label>
-      <input class="w3-input" type="text">
-      <label>Email</label>
-      <input class="w3-input" type="email">
-      <label>Mensagem</label>
-      <textarea class="w3-input"></textarea>
-      <button class="w3-button w3-blue w3-margin-top" type="submit">Enviar</button>
+<div class="w3-container w3-padding-32 w3-black w3-color-text-white" style="margin-top: 50px;" id="inscricao">
+    <h3><b>Entre em contato</b></h3>
+    <p>Preencha o formulário abaixo para entrar em contato</p>
+
+    <form class="w3-container w3-card-4 w3-padding-16" onsubmit="return enviarWhatsApp()">
+        <label class="w3-text-white"><b>Nome Completo</b></label>
+        <input class="w3-input w3-border" type="text" id="nome" placeholder="Exemplo: João " required>
+
+        <label class="w3-text-white"><b>Email</b></label>
+        <input class="w3-input w3-border" type="email" id="email" placeholder="Exemplo: joaozinho123@gmail.com " required>
+        </select>
+
+      
+
+        <label class="w3-text-white"><b>Mensagem Adicional</b></label>
+        <textarea class="w3-input w3-border" id="mensagem" rows="4" placeholder="Conte-nos por que você quer entrar em contato"></textarea>
+
+        <button class="w3-button w3-green w3-margin-top" type="submit"><b>Entrar em contato</b></button>
     </form>
-  </div>
+</div>
+
+<script>
+    function enviarWhatsApp() {
+        var nome = document.getElementById("nome").value;
+        var email = document.getElementById("email").value;
+        var idade = document.getElementById("idade").value;
+        var posicao = document.getElementById("posicao").value;
+        var experiencia = document.getElementById("experiencia").value;
+        var mensagem = document.getElementById("mensagem").value;
+
+        var numero = "+554188419886"; // Número do WhatsApp
+        var texto = `Olá! Eu gostaria de uma informação sobre a NCG! meu Nome: ${nome}%0AEmail: ${email}%0AMensagem: ${mensagem}`;
+
+        // URL do WhatsApp
+        var url = `https://wa.me/${numero}?text=${texto}`;
+
+        // Redireciona para o WhatsApp
+        window.open(url, '_blank');
+
+        return false; 
+    }
+</script>
 
   <!-- Footer -->
   <footer class="w3-center w3-padding-16 w3-black">
